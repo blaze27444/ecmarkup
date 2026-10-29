@@ -1,0 +1,21 @@
+- name: Checkmarx AccuKnox Integration
+  # You may pin to the exact commit or the version.
+  # uses: accuknox/checkmarx-accuknox-action@47675e0b5cd607a180cb4ae9c1cf464a84b82a6a
+  uses: accuknox/checkmarx-accuknox-action@v1.0.0
+  with:
+    # Checkmarx API key
+    api_key: 
+    # Checkmarx project name
+    project_name: 
+    # AccuKnox API endpoint URL to upload the scan results.
+    accuknox_endpoint: 
+    # Unique ID of the tenant for AccuKnox Console.
+    tenant_id: 
+    # Token for authenticating with AccuKnox Console.
+    ak_token: 
+    # Label in AccuKnox Console for tagging scan results.
+    label_id: 
+    # Fetch results from Main branch. By default, it fetches results from most recent branch that was scanned.
+    main_branch: # optional, default is false
+    # Whether to upload scan results as a GitHub artifact
+    upload_artifact: # optional, default is false
